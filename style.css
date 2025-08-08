@@ -1,1 +1,138 @@
+/*Importing Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Miniver&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    /* Color Variables */
+    --white-color: #ffff;
+    --dark-color: #252525;
+    --primary-color: #3b141c;
+    --secondary-color: #d3961c;
+    --light-pink-color: #faf4f5;
+    --medium-gray-color: #ccc;
+    ;
+
+    /* Font Variables */
+    --font-size-small: 0.9rem;
+    /* 14px */
+    --font-size-base: 1rem;
+    /* 16px */
+    --font-size-large: 1.25rem;
+    /* 20px */
+    --font-size-xlarge: 1.5rem;
+    /* 24px */
+    --font-size-xxlarge: 2rem;
+    /* 32px */
+    --font-size-xxxlarge: 2.3rem;
+    /* 48px */
+    /* 
+    Border Radius Variables 
+    --border-radius-sm: 0.125rem;
+    --border-radius-md: 0.25rem;
+    --border-radius-lg: 0.5rem;
+    --border-radius-xl: 1rem;
+    --border-radius-xxl: 1.5rem;
+    */
+
+
+
+    /* font weight Variables */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /*border-radius*/
+    --border-radius-sm: 8px;
+    --border-radius-md: 30px;
+    --border-radius-lg: 50%;
+
+
+    /*site width Variables */
+    --site-max-width: 1300px;
+}
+
+/*style for the whole site*/
+
+
+
+.button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+.section-content {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: var(--site-max-width);
+}
+
+
+/*navbar styles*/
+header {
+    background-color: var(--primary-color);
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.logo-text {
+    color: var(--white-color);
+    font-size: var(--font-size-xxlarge);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.nav-link {
+    color: var(--white-color);
+    padding: 10px 40px;
+    font-size: 24px;
+    border-radius: 90px;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+}
